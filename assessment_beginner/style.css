@@ -162,3 +162,68 @@ form select:focus {
   box-shadow: 0 0 5px rgba(30,26,144,0.3);
   outline: none;
 }
+
+ /* ================= LOGIN PAGE ONLY ================= */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffffff; /* Matches the white background of the sketch */
+}
+
+.login-page .login-box {
+  background: #fff;
+  padding: 60px 40px; /* Increased padding for better spacing */
+  width: 450px;
+  border-radius: 20px;
+  /* Thick black border to match sketch */
+  border: 2px solid #000; 
+  box-sizing: border-box;
+  text-align: left; /* Align labels to the left */
+}
+
+/* Label styling */
+.login-page .login-box label {
+  display: block;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Inputs - Pill shaped with thick borders */
+.login-page .login-box input {
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 40px; /* Space between the two fields */
+  border-radius: 25px; /* Makes it pill-shaped */
+  border: 2px solid #000;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.login-page .login-box input:focus {
+  border-color: #555;
+  outline: none;
+}
+
+/* Button - Optional: Keeping it styled but simple */
+.login-page .login-box button {
+  width: 100%;
+  padding: 15px;
+  background: #000;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-page .login-box button:hover {
+  background: #333;
+}
