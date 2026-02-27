@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 25px;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* --- Navbar --- */
+.navbar {
+  background: #901a7e;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+/* --- Cards --- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.card p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 12px;
+  color: #000;
+}
+
+/* --- Quick Links --- */
+.quick-links {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.quick-links a {
+  display: inline-block;
+  margin: 8px;
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.quick-links a:hover {
+  background: #0056b3;
+}
+
+/* --- Forms & Tables --- */
+form label { font-weight: bold; margin-bottom: 5px; display: block; }
+form input[type="text"], form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+form input:focus { border-color: #1e1a90; box-shadow: 0 0 5px rgba(30,26,144,0.3); }
+
+form button {
+  background: #1e1a90;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+form button:hover { background: #3b35c4; }
+
+.message { color: red; margin-bottom: 15px; font-weight: bold; }
+
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+table th, table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+table th { background-color: #1e1a90; color: #fff; }
+table tr:nth-child(even) { background: #f9f9f9; }
+table tr:hover { background: #f1f1f1; }
+
+.table-action a { color: #1e1a90; font-weight: bold; margin-right: 10px; text-decoration: none; transition: 0.3s; }
+.table-action a:hover { color: #3b35c4; }
+
+.add-btn { display: inline-block; margin-bottom: 15px; padding: 10px 20px; background: #1e1a90; color: white; border-radius: 10px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+.add-btn:hover { background: #3b35c4; }
+
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+form textarea:focus,
+form select:focus {
+  border-color: #1e1a90;
+  box-shadow: 0 0 5px rgba(30,26,144,0.3);
+  outline: none;
+}
